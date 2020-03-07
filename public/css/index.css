@@ -1,0 +1,57 @@
+
+#note-1{
+    background-image: linear-gradient( 135deg,#FFF 10%, #F7CED7FF 100%);
+  }
+  
+  #note-2{
+    background-image: linear-gradient( 135deg,#FFF 10%, #F99FC9FF 100%);
+  }
+  
+  #note-3{
+    background-image: linear-gradient( 135deg,#FFF 10%, #EF6079FF 100%);
+  }
+  
+  body {
+    background: #eff4f7;
+    color: black;
+    font-family: Montserrat, Arial, sans-serif;
+  }
+  
+  .body-bg {
+    background: #F3F4FA !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+  }
+  
+  .box .apexcharts-xaxistooltip {
+    background: #1B213B;
+    color: black;
+  }
+  
+  .content-area {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .box {
+    background-color: rgb(255, 255, 255);
+    /* background-image: linear-gradient( 135deg,#2AFADF 10%,#4C83FF 100%); */
+    padding: 25px 25px; 
+    border-radius: 4px; 
+    margin-bottom: 4px;
+  }
+  
+  .columnbox {
+    padding-right: 15px;
+  }
+  .radialbox {
+    max-height: 333px;
+    margin-bottom: 60px;
+  }
+  
+  .apexcharts-legend-series tspan:nth-child(3) {
+    font-weight: bold;
+    font-size: 20px;
+  }
