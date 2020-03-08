@@ -26,7 +26,7 @@ function getTest(){
         docClient.scan(params, function(err, data) {
             if (err) {
                 return reject(err);
-            } 
+            }
             return resolve(data.Items)
         });
     });
