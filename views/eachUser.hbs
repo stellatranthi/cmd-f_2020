@@ -4,10 +4,10 @@
     <th>First Name</th>
     <th>Last Name</th>
     <th>Last Login</th>
-    <th>Start Date</th>
-    <th>End Date</th>
     <th>Total of Missed Days</th>
     <th>Response Type</th>
+    <th>Start Date</th>
+    <th>End Date</th>
   </tr>
 
   {{#each user}}
@@ -16,10 +16,10 @@
         <td>{{this.fname}}</td>
         <td>{{this.lname}}</td>
         <td>{{this.lastlogin}}</td>
-        <td>{{this.startdate}}</td>
-        <td>{{this.enddate}}</td>
         <td>{{this.misseddates}}</td>
         <td>{{this.responsetype}}</td>
+        <td>{{this.startdate}}</td>
+        <td>{{this.enddate}}</td>
     </tr>
   {{/each}}
 
