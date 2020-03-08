@@ -1,0 +1,28 @@
+<table style="width:100%">
+  <tr>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Last Login</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Total of Missed Days</th>
+    <th>Response Type</th>
+  </tr>
+
+  {{#each user}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.fname}}</td>
+        <td>{{this.lname}}</td>
+        <td>{{this.lastlogin}}</td>
+        <td>{{this.startdate}}</td>
+        <td>{{this.enddate}}</td>
+        <td>{{this.misseddays}}</td>
+        <td>{{this.responsetype}}</td>
+    </tr>
+  {{/each}}
+
+
+
+</table>

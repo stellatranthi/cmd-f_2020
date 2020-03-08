@@ -8,13 +8,26 @@ const db = require('./models/userData');
 
 var port = process.env.PORT || 8000;
 
+const expressHbs = require('express-handlebars');
+app.engine(
+    'hbs',
+    expressHbs({
+      layoutsDir: 'views/layouts/',
+      defaultLayout: 'index.hbs',
+      extname: 'hbs'
+    })
+  );
+
+app.set('view engine', 'hbs');
+app.set('views', 'views');
+
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(staticPath);
 
 app.get('/', (req,res) => {
-    db.put();
-    res.sendFile(path.join(__dirname,'views','index.html'));
+    db.get().then(data => res.render('eachUser', { user: data}));
+    
 });
 
 app.listen(port, function() {
