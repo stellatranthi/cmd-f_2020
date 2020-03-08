@@ -10,6 +10,10 @@
   #note-3{
     background-image: linear-gradient( 135deg,#FFF 10%, #EF6079FF 100%);
   }
+
+  #note-4{
+    background-image: linear-gradient( 90deg,#FFF 10%, #F7CED7FF 100%);
+  }
   
   body {
     background: #eff4f7;
