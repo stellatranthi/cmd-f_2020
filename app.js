@@ -26,8 +26,24 @@ app.use(bodyParser.json());
 app.use(staticPath);
 
 app.get('/', (req,res) => {
-    db.get().then(data => res.render('eachUser', { user: data}));
-    
+    db.get().then(data => {
+      let countMissed = 0;
+      let countUrgent = 0;
+      let total = 0;
+
+      data.forEach(function(user){
+        if(user.misseddates == 4){
+          countMissed += 1
+        }
+        if(user.responsetype == "urgent"){
+          countUrgent += 1;
+        }
+        total += 1;
+      });
+
+      statOne = {"count": countMissed, "total": total}
+      res.render('eachUser', { user: data, data1: statOne, data2: countUrgent, data3: total})
+    });
 });
 
 app.listen(port, function() {
