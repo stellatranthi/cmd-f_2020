@@ -1,0 +1,32 @@
+# this is an auto generated file. This will be overwritten
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    fname
+    lname
+    lastlogin
+    startdate
+    enddate
+    misseddates
+    responsetype
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      fname
+      lname
+      lastlogin
+      startdate
+      enddate
+      misseddates
+      responsetype
+    }
+    nextToken
+  }
+}

@@ -1,0 +1,10 @@
+type User @model {
+  id: ID!
+  fname: String!
+  lname: String!
+  lastlogin: String
+  startdate: String
+  enddate: String
+  misseddates: Int
+  responsetype: String
+}

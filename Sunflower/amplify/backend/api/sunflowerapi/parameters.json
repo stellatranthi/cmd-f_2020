@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "sunflowerapi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authsunflower16e2422d",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

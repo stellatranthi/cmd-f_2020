@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-sunflower-dev-131458-authRole",
+            "UnauthRoleArn": "arn:aws:iam::168052438790:role/amplify-sunflower-dev-131458-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::168052438790:role/amplify-sunflower-dev-131458-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-sunflower-dev-131458-deployment",
+            "UnauthRoleName": "amplify-sunflower-dev-131458-unauthRole",
+            "StackName": "amplify-sunflower-dev-131458",
+            "StackId": "arn:aws:cloudformation:us-west-2:168052438790:stack/amplify-sunflower-dev-131458/b45e9d90-60b8-11ea-991f-0a92bf2e649c",
+            "AmplifyAppId": "d4tqt7pnr2gay"
+        },
+        "categories": {
+            "auth": {
+                "sunflower16e2422d": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    fname
+    lname
+    lastlogin
+    startdate
+    enddate
+    misseddates
+    responsetype
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    fname
+    lname
+    lastlogin
+    startdate
+    enddate
+    misseddates
+    responsetype
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    fname
+    lname
+    lastlogin
+    startdate
+    enddate
+    misseddates
+    responsetype
+  }
+}
